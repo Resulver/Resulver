@@ -4,6 +4,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Resulver</Title>
+    <PackageId>Resulver</PackageId>
+    <Description>A package for implementing the result pattern</Description>
+    <RepositoryUrl>https://github.com/M0BIN-V/Resulver</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

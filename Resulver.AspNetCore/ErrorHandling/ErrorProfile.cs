@@ -1,0 +1,19 @@
+﻿namespace Resulver.AspNetCore.ErrorHandling;
+
+public class ErrorProfile
+{
+    public List<ErrorWithStatusCode> Errors { get; } = [];
+
+    protected ErrorWithStatusCode AddError<TError>()
+        where TError : IError
+    {
+        var errorWithStatus = new ErrorWithStatusCode
+        {
+            Error = typeof(TError)
+        };
+
+        Errors.Add(errorWithStatus);
+
+        return errorWithStatus;
+    }
+}
