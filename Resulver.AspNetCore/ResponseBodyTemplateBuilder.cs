@@ -1,15 +1,21 @@
-﻿namespace Resulver.AspNetCore;
+﻿using Resulver.AspNetCore.ErrorHandling;
+
+namespace Resulver.AspNetCore;
 
 public static class ResponseBodyTemplateBuilder
 {
     public static ResponseBodyTemplate<TContent> Build<TContent>(
-        string? title = null, string? message = null, TContent? content = default)
+        IResult<TContent> result)
     {
         return new ResponseBodyTemplate<TContent>
         {
-            Content = content,
-            Title = title,
-            Message = message,
+            Content = result.Content,
+            Error = result.IsFailure ?
+            new ErrorResponse
+            {
+                Error = result.Error!.GetType().Name,
+                Message = result.Error.Message,
+            } : null
         };
     }
 }

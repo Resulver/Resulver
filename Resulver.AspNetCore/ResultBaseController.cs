@@ -14,11 +14,16 @@ public class ResultBaseController : ControllerBase
 
     public IActionResult FromResult<TResultContent>(IResult<TResultContent> result, int SuccessStatusCode)
     {
-        if (result.IsFailure) return _errorHandler.Handle(result.Error!);
+        var response = ResponseBodyTemplateBuilder.Build(result);
 
-        return ResponseBodyTemplateBuilder.Build(
-            message: result.Message,
-            content: result.Content)
-            .ToActionResult(SuccessStatusCode);
+        if (result.IsFailure)
+        {
+            SuccessStatusCode = _errorHandler.GetErrorStatusCode(result.Error!);
+        }
+
+        return new ObjectResult(response)
+        {
+            StatusCode = SuccessStatusCode,
+        };
     }
 }

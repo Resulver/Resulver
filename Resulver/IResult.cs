@@ -7,5 +7,4 @@ public interface IResult<TContent>
 
     public IError? Error { get; }
     public TContent? Content { get; set; }
-    public string? Message { get; }
 }

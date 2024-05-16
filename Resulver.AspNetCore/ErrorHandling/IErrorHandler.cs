@@ -4,5 +4,5 @@ namespace Resulver.AspNetCore.ErrorHandling;
 
 public interface IErrorHandler
 {
-    public IActionResult Handle(IError error);
+    public int GetErrorStatusCode(IError error);
 }

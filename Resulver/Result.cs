@@ -9,19 +9,15 @@ public abstract class Result<TContent> : IResult<TContent>
 
     public TContent? Content { get; set; }
 
-    public string? Message { get; }
-
-    public Result(TContent content, string? message = null)
+    public Result(TContent content)
     {
         IsSuccess = true;
         Content = content;
-        Message = message;
     }
 
     public Result(IError error)
     {
         IsSuccess = false;
         Error = error;
-        Message = error.Message;
     }
 }
