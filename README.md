@@ -1,13 +1,13 @@
 ### Table of content
 - [Getting started](#getting-started)
-    - [Installing](#Installing-package)
+    - [Installing](#1-Installing-package)
     - [Create result class](#2-Create-result-class)
-    - [Usage](#3.-Usage)
+    - [Usage](#3-Usage)
 
 
 
 ## Getting started
-### Installing package
+### 1. Installing package
   ```bash
   dotnet add package Resulver
   ```
