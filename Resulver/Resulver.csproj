@@ -9,6 +9,14 @@
     <Description>A package for implementing the result pattern</Description>
     <RepositoryUrl>https://github.com/M0BIN-V/Resulver</RepositoryUrl>
     <Version>1.0.3</Version>
+    <PackageIcon>ResulverLogo.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Illustrator\Resulver\ResulverLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
