@@ -10,6 +10,7 @@ public static class ResponseBodyTemplateBuilder
         return new ResponseBodyTemplate<TContent>
         {
             Content = result.Content,
+            Message = result.Message,
             Error = result.IsFailure ?
             new ErrorResponse
             {
