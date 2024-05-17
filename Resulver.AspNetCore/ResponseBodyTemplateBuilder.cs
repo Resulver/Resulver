@@ -14,7 +14,7 @@ public static class ResponseBodyTemplateBuilder
             Error = result.IsFailure ?
             new ErrorResponse
             {
-                Error = result.Error!.GetType().Name,
+                ErrorName = result.Error!.GetType().Name,
                 Message = result.Error.Message,
             } : null
         };
