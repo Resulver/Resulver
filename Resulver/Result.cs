@@ -1,6 +1,7 @@
 ﻿namespace Resulver;
 
 public abstract class Result<TContent> : IResult<TContent>
+    where TContent : class
 {
     public bool IsSuccess { get; }
     public bool IsFailure { get => !IsSuccess; }
@@ -11,7 +12,7 @@ public abstract class Result<TContent> : IResult<TContent>
 
     public TContent? Content { get; set; }
 
-    public Result(TContent? content, string? message)
+    public Result(TContent? content = null, string? message = null)
     {
         Message = message;
         IsSuccess = true;
