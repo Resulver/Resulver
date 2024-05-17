@@ -12,7 +12,7 @@ internal class ErrorHandler : IErrorHandler
         _errors = errors;
     }
 
-    public int GetErrorStatusCode(IError error)
+    public int GetErrorStatusCode(IResultError error)
     {
         foreach (var errorWithStatusCode in _errors)
         {

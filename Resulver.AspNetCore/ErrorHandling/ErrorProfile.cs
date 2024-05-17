@@ -5,7 +5,7 @@ public class ErrorProfile
     public List<ErrorWithStatusCode> Errors { get; } = [];
 
     protected ErrorWithStatusCode AddError<TError>()
-        where TError : IError
+        where TError : IResultError
     {
         var errorWithStatus = new ErrorWithStatusCode
         {

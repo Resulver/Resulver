@@ -1,6 +1,6 @@
 ﻿namespace Resulver;
 
-public class Error(string message) : IError
+public class ResultError(string message) : IResultError
 {
     public string Message { get; set; } = message;
 }

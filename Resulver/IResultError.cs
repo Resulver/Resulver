@@ -1,6 +1,6 @@
 ﻿namespace Resulver;
 
-public interface IError
+public interface IResultError
 {
     public string Message { get; set; }
 }
