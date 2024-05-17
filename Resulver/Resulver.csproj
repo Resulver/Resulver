@@ -8,6 +8,7 @@
     <PackageId>Resulver</PackageId>
     <Description>A package for implementing the result pattern</Description>
     <RepositoryUrl>https://github.com/M0BIN-V/Resulver</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>

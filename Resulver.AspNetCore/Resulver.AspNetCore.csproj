@@ -7,6 +7,7 @@
     <Title>Resulver.AspNetCore</Title>
     <Description>A package for use Resulver in asp.net core</Description>
     <RepositoryUrl>https://github.com/M0BIN-V/Resulver</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
