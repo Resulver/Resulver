@@ -1,7 +1,7 @@
 ### Table of content
 - [Getting started](#getting-started)
     - [Installing](#Installing-package)
-    - [Create result class](#2.-Create-result-class)
+    - [Create result class](#2-Create-result-class)
     - [Usage](#3.-Usage)
 
 
