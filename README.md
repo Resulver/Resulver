@@ -25,7 +25,7 @@
   
   You can change it to any other type you want.
 
-  ## 3. Usage
+  ### 3. Usage
    ```csharp
    public MyResult Foo()
    {
