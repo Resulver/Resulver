@@ -3,6 +3,7 @@
     - [Installing](#1-Installing-package)
     - [Create result class](#2-Create-result-class)
     - [Usage](#3-Usage)
+- [Use in Asp core web api]()
 
 
 
