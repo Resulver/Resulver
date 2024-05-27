@@ -39,3 +39,5 @@
         Console.WriteLine(result.Content);
    }  
    ```
+
+#### [Use in ASP Core Web API](https://github.com/M0BIN-V/Resulver.AspNetCore.WebApi)
