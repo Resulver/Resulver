@@ -3,6 +3,7 @@
     - [Installing](#1-Installing-package)
     - [Create result class](#2-Create-result-class)
     - [Usage](#3-Usage)
+- [Use in Asp core web api](https://github.com/M0BIN-V/Resulver.AspNetCore.WebApi)
 
 
 
@@ -24,7 +25,7 @@
   
   You can change it to any other type you want.
 
-  ## 3. Usage
+  ### 3. Usage
    ```csharp
    public MyResult Foo()
    {
@@ -38,3 +39,5 @@
         Console.WriteLine(result.Content);
    }  
    ```
+
+#### [Use in ASP Core Web API](https://github.com/M0BIN-V/Resulver.AspNetCore.WebApi)
