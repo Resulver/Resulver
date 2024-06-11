@@ -4,11 +4,7 @@ public class ContentResult<TContent> : Result
 {
     public required TContent Content { get; set; }
 
-    public ContentResult(TContent content, string? message = null) :
-        base(message)
-    {
-        Content = content;
-    }
+    public ContentResult(string? message = null) : base(message) { }
 
     public ContentResult(ResultError error) : base(error) { }
 }
