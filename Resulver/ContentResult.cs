@@ -1,6 +1,6 @@
 ﻿namespace Resulver;
 
-public abstract class ContentResult<TContent> : Result
+public class ContentResult<TContent> : Result
 {
     public required TContent Content { get; set; }
 
