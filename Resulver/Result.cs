@@ -22,9 +22,9 @@ public class Result : IResult
 
 public class Result<TContent> : Result, IResult<TContent>
 {
-    public required TContent Content { get; set; }
+    public TContent? Content { get; set; }
 
-    public Result(string? message = null) : base(message) { }
+    public Result(TContent? content, string? message = null) : base(message) { }
 
     public Result(ResultError error) : base(error) { }
 }

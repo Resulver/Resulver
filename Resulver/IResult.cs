@@ -11,5 +11,5 @@ public interface IResult
 
 public interface IResult<TContent> : IResult
 {
-    public TContent Content { get; set; }
+    public TContent? Content { get; set; }
 }
