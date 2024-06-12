@@ -24,7 +24,10 @@ public class Result<TContent> : Result, IResult<TContent>
 {
     public TContent? Content { get; set; }
 
-    public Result(TContent? content, string? message = null) : base(message) { }
+    public Result(TContent? content, string? message = null) : base(message)
+    {
+        Content = content;
+    }
 
     public Result(ResultError error) : base(error) { }
 }
