@@ -1,15 +1,15 @@
 ﻿namespace Resulver;
 
-public interface IResult
+internal interface IResult
 {
     public bool IsFailure { get; }
     public bool IsSuccess { get; }
 
     public string? Message { get; init; }
-    public List<IResultError> Errors { get; init; }
+    public List<ResultError> Errors { get; init; }
 }
 
-public interface IResult<TContent> : IResult
+internal interface IResult<TContent> : IResult
 {
     public TContent? Content { get; set; }
 }

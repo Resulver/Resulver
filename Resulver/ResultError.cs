@@ -1,6 +1,15 @@
 ﻿namespace Resulver;
 
-public class ResultError(string message) : IResultError
+public class ResultError
 {
-    public string Message { get; set; } = message;
+    public string Id { get; }
+    public string? Title { get; }
+    public string Message { get; }
+
+    public ResultError(string message, string? title = null, string? id = null)
+    {
+        Id = id ?? this.GetType().Name;
+        Title = title;
+        Message = message;
+    }
 }

@@ -1,33 +1,47 @@
 ﻿namespace Resulver;
 
-public class Result : IResult
+public sealed class Result : IResult
 {
-    public bool IsSuccess { get => Errors.Count == 0; }
-    public bool IsFailure { get => Errors.Count > 0; }
+    public bool IsSuccess => Errors.Count == 0;
+    public bool IsFailure => Errors.Count > 0;
 
-    public List<IResultError> Errors { get; init; } = [];
+    public List<ResultError> Errors { get; init; } = [];
 
     public string? Message { get; init; }
+
+    public Result(params ResultError[] errors)
+    {
+        Errors.AddRange(errors);
+    }
+
+    public Result(string? message = null)
+    {
+        Message = message;
+    }
+}
+
+public sealed class Result<TContent> : IResult<TContent>
+{
+    public bool IsSuccess => Errors.Count == 0;
+    public bool IsFailure => Errors.Count > 0;
+
+    public List<ResultError> Errors { get; init; } = [];
+
+    public string? Message { get; init; }
+
+    public TContent? Content { get; set; }
+    public Result(params ResultError[] errors)
+    {
+        Errors.AddRange(errors);
+    }
 
     public Result(string? message = null)
     {
         Message = message;
     }
 
-    public Result(IResultError error)
-    {
-        Errors.Add(error);
-    }
-}
-
-public class Result<TContent> : Result, IResult<TContent>
-{
-    public TContent? Content { get; set; }
-
-    public Result(TContent? content, string? message = null) : base(message)
+    public Result(TContent content)
     {
         Content = content;
     }
-
-    public Result(ResultError error) : base(error) { }
 }
