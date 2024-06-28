@@ -2,7 +2,6 @@
 - [Getting started](#getting-started)
     - [Installing](#1-Installing-package)
     - [Usage](#2-Usage)
-- [Use in Asp core web api](https://github.com/M0BIN-V/Resulver.AspNetCore.WebApi)
 
 
 
@@ -26,5 +25,3 @@
         Console.WriteLine(result.Content);
    }  
    ```
-
-#### [Use in ASP Core Web API](https://github.com/M0BIN-V/Resulver.AspNetCore.WebApi)
