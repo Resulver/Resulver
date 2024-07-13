@@ -18,6 +18,8 @@ public class Result
     {
         Message = message;
     }
+
+    public static implicit operator Result(ResultError error) => new(error);
 }
 
 public class Result<TContent> : Result
@@ -37,4 +39,8 @@ public class Result<TContent> : Result
     {
         Content = content;
     }
+
+    public static implicit operator Result<TContent>(ResultError error) => new(error);
+
+    public static implicit operator Task<Result<TContent>>(Result<TContent> result) => Task.FromResult(result);
 }

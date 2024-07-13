@@ -12,6 +12,4 @@ public class ResultError
         Title = title;
         Message = message;
     }
-
-    public static implicit operator Result(ResultError error) => new(error);
 }
