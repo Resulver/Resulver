@@ -20,6 +20,7 @@ public class Result
     }
 
     public static implicit operator Result(ResultError error) => new(error);
+    public static implicit operator Task<Result>(Result result) => Task.FromResult(result);
 }
 
 public class Result<TContent> : Result
