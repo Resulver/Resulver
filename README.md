@@ -1,8 +1,8 @@
 ### Table of content
 - [Getting started](#getting-started)
     - [Installing](#1-Installing-package)
-    - [Usage](#2-Usage)
-    - [ResultMessage](#Result-Message)
+- [Usage](#Usage)
+- [ResultMessage](#Result-Message)
 
 
 ## Getting started
@@ -11,7 +11,7 @@
   dotnet add package Resulver
   ```
 
-### 2. Usage
+### Usage
    ```csharp
     public Result<int> Sum(int a, int b)
     {
