@@ -1,7 +1,8 @@
 ### Table of content
 - [Installing](#Installation)
 - [Usage](#Usage)
-- [ResultMessage](#Result-Message)
+- [Result Message](#Result-Message)
+- [Result Errors](#Result-Errors)
 
 ### Installation
   ```bash
