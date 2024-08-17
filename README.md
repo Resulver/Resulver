@@ -47,7 +47,7 @@ public void Writer()
 ### Result Errors
 ```csharp
 public class UserNotFoundError() : ResultError(message: "User not found");
-public class UserIdIsNotValid() : ResultError(message:   "User ID is not valid");
+public class UserIdIsNotValidError() : ResultError(message:   "User ID is not valid");
 
 public Result RemoveUser(int userId)
 {
@@ -58,7 +58,7 @@ public Result RemoveUser(int userId)
     return new UserNotFoundError();
 
     //or for multiple errors
-    return new Result(new UserNotFoundError(), new UserIdIsNotValid());
+    return new Result(new UserNotFoundError(), new UserIdIsNotValidError());
 }
 
 public void Writer()
