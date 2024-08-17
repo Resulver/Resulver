@@ -35,9 +35,10 @@ public class Result<TContent> : Result
         Errors.AddRange(errors);
     }
 
-    public Result(TContent content)
+    public Result(TContent content, string? message = null)
     {
         Content = content;
+        Message = message;
     }
 
     public static implicit operator Result<TContent>(ResultError error) => new(error);
