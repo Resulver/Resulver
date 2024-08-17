@@ -45,4 +45,6 @@ public class Result<TContent> : Result
     public static implicit operator Result<TContent>(ResultError error) => new(error);
 
     public static implicit operator Task<Result<TContent>>(Result<TContent> result) => Task.FromResult(result);
+
+    public static implicit operator Result<TContent>(TContent content) => new(content);
 }
