@@ -1,3 +1,7 @@
+[![NuGet Package](https://img.shields.io/nuget/v/Resulver)](https://www.nuget.org/packages/Resulver/)
+
+
+
 ### Table of content
 - [Installing](#Installation)
 - [Usage](#Usage)
