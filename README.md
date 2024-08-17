@@ -43,3 +43,33 @@ public void Writer()
     Console.WriteLine(result.Message);
 }
 ```
+### Result Errors
+```csharp
+public class UserNotFoundError() : ResultError(message: "User not found");
+public class UserIdIsNotValid() : ResultError(message:   "User ID is not valid");
+
+public Result RemoveUser(int userId)
+{
+    //Implementation
+
+
+
+    return new UserNotFoundError();
+
+    //or for multiple errors
+    return new Result(new UserNotFoundError(), new UserIdIsNotValid());
+}
+
+public void Writer()
+{
+    var result = RemoveUser(1);
+
+    if (result.IsFailure)
+    {
+        foreach (var error in result.Errors)
+        {
+            Console.WriteLine(error.Message);
+        }
+    }
+}
+```
