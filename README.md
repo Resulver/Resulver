@@ -13,15 +13,17 @@
 
   ### 2. Usage
    ```csharp
-   public Result<string> Foo()
-   {
-        return new Result<string>(content: "this is content" , message: "this is message");
-   }
+    public Result<int> Sum(int a, int b)
+    {
+        var sum = a + b;
 
-   public void ShowResult()
-   {
-        var result = Do();
-  
+        return new Result<int>(sum);
+    }
+
+    public void Writer()
+    {
+        var result = Sum(3, 5);
+
         Console.WriteLine(result.Content);
-   }  
+    } 
    ```
