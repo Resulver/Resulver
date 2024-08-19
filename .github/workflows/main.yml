@@ -19,7 +19,7 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Restore dependencies Resulver/Resulver.csproj
-        run: dotnet restore
+        run: dotnet restore Resulver/Resulver.csproj
 
       - name: Build the project
         run: dotnet build Resulver/Resulver.csproj --configuration Release --no-restore
