@@ -18,14 +18,14 @@ jobs:
         with:
           dotnet-version: '8.x'
 
-      - name: Restore dependencies
+      - name: Restore dependencies Resulver/Resulver.csproj
         run: dotnet restore
 
       - name: Build the project
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build Resulver/Resulver.csproj --configuration Release --no-restore
 
       - name: Pack the project
-        run: dotnet pack --configuration Release --no-build --output ./nupkg
+        run: dotnet pack Resulver/Resulver.csproj --configuration Release --no-build --output ./nupkg
 
       - name: Publish to NuGet
         env:
