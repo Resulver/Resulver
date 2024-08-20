@@ -6,15 +6,14 @@
 		<Nullable>enable</Nullable>
 		<Title>Resulver</Title>
 		<PackageId>Resulver</PackageId>
-		<Description>A package for implementing the result pattern</Description>
+		<Description>A package designed to implement the result pattern .</Description>
 		<RepositoryUrl>https://github.com/M0BIN-V/Resulver</RepositoryUrl>
-		<Version>1.2.2</Version>
+		<Version>1.2.3s</Version>
 		<PackageIcon>ResulverIcon.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="ResulverIcon.png" Pack="true" PackagePath=""/>
 		<None Include="..\README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
