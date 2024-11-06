@@ -12,6 +12,8 @@
         <PackageIcon>ResulverIcon.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENCE</PackageLicenseFile>
+        <PackageTags>Resulver ; Result Pattern ;</PackageTags>
+        <PackageReleaseNotes></PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
