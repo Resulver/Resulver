@@ -1,19 +1,20 @@
 [![NuGet Package](https://img.shields.io/nuget/v/Resulver)](https://www.nuget.org/packages/Resulver/)
 
-
-
 ### Table of content
+
 - [Installing](#Installation)
 - [Usage](#Usage)
 - [Result Message](#Result-Message)
 - [Result Errors](#Result-Errors)
 
 ### Installation
+
   ```bash
   dotnet add package Resulver
   ```
 
 ### Usage
+
    ```csharp
     public Result<int> Sum(int a, int b)
     {
@@ -31,6 +32,7 @@
    ```
 
 ### Result Message
+
 ```csharp
 public Result<User> AddUser(User user)
 {
@@ -48,7 +50,9 @@ public void Writer()
     Console.WriteLine(result.Message);
 }
 ```
+
 ### Result Errors
+
 ```csharp
 public class UserNotFoundError() : ResultError(message: "User not found");
 public class UserIdIsNotValidError() : ResultError(message:   "User ID is not valid");

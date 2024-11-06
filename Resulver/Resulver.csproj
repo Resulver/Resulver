@@ -1,32 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<Title>Resulver</Title>
-		<PackageId>Resulver</PackageId>
-		<Description>A package designed to implement the result pattern .</Description>
-		<RepositoryUrl>https://github.com/M0BIN-V/Resulver</RepositoryUrl>
-		<Version>1.2.5</Version>
-		<PackageIcon>ResulverIcon.png</PackageIcon>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageLicenseFile>LICENCE</PackageLicenseFile>
-	</PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>Resulver</Title>
+        <PackageId>Resulver</PackageId>
+        <Description>A package designed to implement the result pattern .</Description>
+        <RepositoryUrl>https://github.com/M0BIN-V/Resulver</RepositoryUrl>
+        <Version>1.2.5</Version>
+        <PackageIcon>ResulverIcon.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENCE</PackageLicenseFile>
+    </PropertyGroup>
 
-	<ItemGroup>
-	  <None Include="..\LICENCE">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	  <None Include="..\README.md">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	  <None Include="..\ResulverIcon.png">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
-	</ItemGroup>
+    <ItemGroup>
+        <None Include="..\LICENCE">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+        <None Include="..\ResulverIcon.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 
 </Project>
