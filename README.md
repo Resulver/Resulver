@@ -1,4 +1,5 @@
 [![NuGet Package](https://img.shields.io/nuget/v/Resulver)](https://www.nuget.org/packages/Resulver/)
+[![NuGet](https://img.shields.io/nuget/dt/Resulver)](https://www.nuget.org/packages/Resulver) 
 
 ### Table of content
 
