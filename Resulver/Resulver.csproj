@@ -8,7 +8,7 @@
         <PackageId>Resulver</PackageId>
         <Description>A package designed to implement the result pattern .</Description>
         <RepositoryUrl>https://github.com/Resulver/Resulver</RepositoryUrl>
-        <Version>2.0.0</Version>
+        <Version>2.0.1</Version>
         <PackageIcon>ResulverIcon.png</PackageIcon>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENCE</PackageLicenseFile>
